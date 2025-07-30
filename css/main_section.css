@@ -1,4 +1,160 @@
-/* main {
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
-} */
+main {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+    max-width: 550px;
+}
+
+.main__buttons {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.main__buttons button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: background-color 0.2s;
+}
+
+.main__buttons button span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.main__buttons button:hover {
+    background-color: rgba(154, 154, 154, 0.1);
+}
+
+#main__buttons--foryou {
+    position: relative;
+}
+
+#main__buttons--foryou::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    background-color: rgb(0, 145, 255);
+}
+
+#main__buttons--following span{
+    color: #7d7d7d;
+}
+
+.main__header {
+    padding: 1rem;
+    display: none;
+}
+
+.main__header span {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.main__create-post {
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+}
+
+.main__create-post--form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.4rem;
+}
+
+#msg {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+#msg:focus {
+    outline: none;
+}
+
+.main__create-post--form-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.user__image {
+    display: flex;
+    max-width: 40px;
+}
+
+.user__image img {
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.create-post-menu-btn {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.create-post-menu-btn button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0.3rem;
+    transition: background-color 0.2s;
+    border-radius: 2rem;
+}
+
+.create-post-menu-btn button:hover {
+    background-color: rgba(0, 145, 255, 0.2);;
+}
+
+.create-post-menu-btn button i{
+    color: rgb(0, 145, 255);
+    font-size: 1rem;
+}
+
+#location-btn {
+    opacity: 50%;
+    pointer-events: none;
+}
+
+.user__image a {
+    transition: opacity 0.2s;
+}
+
+.user__image a:hover {
+    opacity: 75%;
+}
+
+#submit-post {
+    border: none;
+    background-color: transparent;
+    color: #000;
+    background-color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 0.5rem 0rem;
+    width: 100%;
+    max-width: 75px;
+    pointer-events: none;
+    opacity: 50%;
+}
+
+@media (max-width: 768px) {
+    .main__header {
+        display: block;
+    }
+}

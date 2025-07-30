@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="img/assets/zero_budget_x_favicon.png" type="image/x-icon">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="img/assets/zero_budget_x_favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/main_section.css">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/main_section.css" />
 
     <title>Home / Zero Budget X</title>
 </head>
@@ -19,48 +20,51 @@
         <nav>
             <a href="index.html" class="nav__item" id="nav__logo">
                 <div class="header__image">
-                    <img src="img/assets/zero_budget_x_logo.png" alt="logo" draggable="false">
+                <img src="img/assets/zero_budget_x_logo.png" alt="logo" draggable="false" />
                 </div>
             </a>
-            <a href="" class="nav__item" id="nav__current">
+            <button class="nav__item" id="nav__current">
                 <i class="fa-solid fa-house"></i>
                 <span>Home</span>
-            </a>
-            <a href="" class="nav__item">
+            </button>
+            <button class="nav__item">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <span>Explore</span>
-            </a>
-            <a href="" class="nav__item">
+            </button>
+            <button class="nav__item">
                 <i class="fa-regular fa-bell"></i>
                 <span>Notifications</span>
-            </a>
-            <a href="" class="nav__item">
+            </button>
+            <button class="nav__item">
                 <i class="fa-regular fa-envelope"></i>
                 <span>Messages</span>
-            </a>
-            <a href="" class="nav__item">
+            </button>
+            <button class="nav__item">
                 <i class="fa-regular fa-bookmark"></i>
                 <span>Bookmarks</span>
-            </a>
-            <a href="" class="nav__item">
+            </button>
+            <button class="nav__item">
                 <i class="fa-solid fa-users"></i>
                 <span>Communities</span>
             </a>
-            <a href="" class="nav__item">
+            <button class="nav__item">
                 <i class="fa-solid fa-user"></i>
                 <span>Profile</span>
-            </a>
-            <a href="" class="nav__item">
+            </button>
+            <button class="nav__item">
                 <i class="fa-solid fa-ellipsis"></i>
                 <span>More</span>
-            </a>
+            </button>
+            <button class="nav__item" id="nav__item--post">
+                <i class="fa-solid fa-feather-pointed"></i>
+            </button>
             <button id="nav__post-btn">Post</button>
         </nav>
-        
-        <a href="" class="header__user">
+
+        <button class="header__user">
             <div class="header__user--content">
                 <div class="header__user--avatar">
-                    <img src="img/users/user_you.png" alt="user_you" draggable="false">
+                    <img src="img/users/user_you.png" alt="user_you" draggable="false" />
                 </div>
                 <div class="header__user--data">
                     <p id="header__user--name">You</p>
@@ -68,13 +72,45 @@
                 </div>
             </div>
             <i class="fa-solid fa-ellipsis"></i>
-        </a>
+        </button>
     </header>
 
     <main>
+        <div class="main__header">
+            <span>Home</span>
+        </div>
+        <div class="main__buttons">
+            <button id="main__buttons--foryou">
+                <span>For you</span>
+            </button>
+            <button id="main__buttons--following">
+                <span>Following</span>
+            </button>
+        </div>
+        <div class="main__create-post">
+            <div class="main__create-post__user">
+                <div class="user__image">
+                    <a href="">
+                        <img src="img/users/user_you.png" alt="user_you">
+                    </a>
+                </div>
+            </div>
+            <div class="main__create-post--form">
+                <input type="text" name="msg" id="msg" placeholder="What's happening?">
+                <div class="main__create-post--form-menu">
+                    <div class="create-post-menu-btn">
+                        <button><i class="fa-solid fa-image"></i></button>
+                        <button><i class="fa-solid fa-list-check"></i></button>
+                        <button><i class="fa-solid fa-face-smile"></i></button>
+                        <button><i class="fa-solid fa-calendar-days"></i></button>
+                        <button id="location-btn" disabled><i class="fa-solid fa-location-dot"></i></button>
+                    </div>
+                    <button id="submit-post" disabled>Post</button>
+                </div>
+            </div>
+        </div>
         
     </main>
-
 </body>
 
 </html>
