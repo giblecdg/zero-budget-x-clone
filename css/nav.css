@@ -2,9 +2,12 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
+    height: 100vh;
     margin: 0rem 1rem;
     min-width: 270px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .header__image {

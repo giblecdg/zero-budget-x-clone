@@ -154,6 +154,189 @@ main {
     opacity: 50%;
 }
 
+.main__posts--post {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+.main__posts--post:hover {
+    background-color: rgba(154, 154, 154, 0.1);
+}
+
+.post__user-data {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+}
+
+.post__user-data-name {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.username_and_date {
+    display: flex;
+    gap: 0.2rem;
+}
+
+.post__user-image {
+    max-width: 40px;
+}
+
+.post__user-data-name > p {
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.post__user-data-name > p:hover {
+    text-decoration: underline;
+}
+
+.username_and_date p{
+    color: #7d7d7d;
+}
+
+.post__user-data button {
+    color: #7d7d7d;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    transition: background-color 0.2s;
+}
+
+.post__user-data button i {
+    transition: color 0.2s;
+}
+
+.post__user-data button:hover{
+    background-color: rgba(0, 145, 255, 0.1);
+}
+
+.post__user-data button:hover i{
+    color: rgb(0, 145, 255);
+}
+
+#post_date {
+    cursor: pointer;
+}
+
+#post_date:hover {
+    text-decoration: underline;
+}
+
+.post__user-image img {
+    width: 100%;
+    border-radius: 2rem;
+    transition: opacity 0.2s;
+    cursor: pointer;
+}
+
+.post__user-image img:hover {
+    opacity: 75%;
+}
+
+.post__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.post__image {
+    margin-top: 0.5rem;
+    max-width: 500px;
+}
+
+.post__image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.post__text {
+    font-size: 1rem;
+}
+
+.post__buttons {
+    margin-top: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__buttons button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    gap: 0.1em;
+    transition: background-color 0.2s, color 0.2s;
+    color: #7d7d7d;
+    font-weight: 600;
+    align-items: center;
+}
+
+.post__buttons button i {
+    transition: color 0.2s;
+    color: #7d7d7d;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 2rem;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.post__buttons button:hover i{
+    color: rgb(0, 145, 255);
+    background-color: rgba(0, 145, 255, 0.1);
+}
+
+.post__buttons button:hover {
+    color: rgb(0, 145, 255);
+}
+
+.post__buttons button:nth-child(2):hover i{
+    color: rgb(0, 153, 18);
+    background-color: rgba(0, 145, 255, 0.1);
+}
+
+.post__buttons button:nth-child(2):hover {
+    color: rgb(0, 153, 18);
+}
+
+.post__buttons button:nth-child(3):hover i{
+    color: rgb(255, 0, 170);
+    background-color: rgba(255, 0, 170, 0.1);
+}
+
+.post__buttons button:nth-child(3):hover {
+    color: rgb(255, 0, 170);
+}
+
+.post__buttons-save {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.post__buttons-save button:nth-child(2):hover i {
+    color: rgb(0, 145, 255);
+    background-color: rgba(0, 145, 255, 0.1);
+}
+
+.post__buttons-save button:nth-child(2):hover {
+    color: rgb(0, 145, 255);
+}
+
+.main__posts .main__posts--post:last-of-type {
+    border-bottom: none;
+}
+
 @media (max-width: 768px) {
     .main__header {
         display: block;
