@@ -178,6 +178,7 @@ main {
 .post__user-data-name {
     display: flex;
     gap: 0.5rem;
+    align-items: center;
 }
 
 .username_and_date {
@@ -258,10 +259,12 @@ main {
 .post__image img {
     width: 100%;
     border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);;
 }
 
 .post__text {
     font-size: 1rem;
+    margin-top: 0.3rem;
 }
 
 .post__buttons {
@@ -281,6 +284,7 @@ main {
     color: #7d7d7d;
     font-weight: 600;
     align-items: center;
+    font-size: 0.7rem;
 }
 
 .post__buttons button i {
@@ -340,5 +344,8 @@ main {
 @media (max-width: 768px) {
     .main__header {
         display: block;
+    }
+    .post__buttons-save button:nth-child(1) {
+        display: none;
     }
 }
