@@ -9,6 +9,11 @@ main {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(25px);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .main__buttons button{
@@ -52,8 +57,11 @@ main {
 }
 
 .main__header {
+    backdrop-filter: blur(25px);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 1rem;
     display: none;
+    z-index: 100;
 }
 
 .main__header span {
@@ -141,7 +149,6 @@ main {
 
 #submit-post {
     border: none;
-    background-color: transparent;
     color: #000;
     background-color: #fff;
     font-size: 1.1rem;
@@ -344,8 +351,14 @@ main {
 @media (max-width: 768px) {
     .main__header {
         display: block;
+        position: sticky;
+        top: 0;
     }
     .post__buttons-save button:nth-child(1) {
         display: none;
+    }
+
+    .main__buttons {
+        top: 52px;
     }
 }

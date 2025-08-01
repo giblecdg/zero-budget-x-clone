@@ -160,10 +160,5 @@ nav {
 
     .nav__item {
         padding-right: 0.5rem;
-        padding: 0.6rem;
-    }
-
-    .header__user {
-        padding: 0.6rem;
     }
 }
